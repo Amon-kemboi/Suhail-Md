@@ -26,7 +26,7 @@ global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://te
 
 global.devs = "923184474176" // Developer Contact
 global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "null";
-global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "923184474176";
+global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(254729614536)
 
 
 
@@ -43,7 +43,7 @@ global.disablegroup = process.env.DISABLE_GROUPS || "false", // disable bot in g
 
 global.MsgsInLog = process.env.MSGS_IN_LOG|| "false" // "true"  to see messages , "log" to open logs , "false" to hide logs messages
 global.userImages= process.env.USER_IMAGES || "https://telegra.ph/file/758549f0de2219884f387.jpg,https://telegra.ph/file/9498496b010dfb5900b80.jpg,https://telegra.ph/file/59bf80efbb6e6576b5a52.jpg,https://telegra.ph/file/ee0e191363161e88e4743.jpg" // ramadan Theme Images
-global.waPresence= process.env.WAPRESENCE ||  "set according to your need" ; // 'unavailable' | 'available' | 'composing' | 'recording' | 'paused'
+global.waPresence= process.env.WAPRESENCE ||  "set according to your need" ; // 'recording'
 
 
 //========================= [ AUTO READ MSGS & CMDS ] =========================\\
@@ -53,8 +53,8 @@ global.readmessagefrom = process.env.READ_MESSAGE_FROM || "923184474176,923xxxxx
 
 
 //========================= [ AUTO SAVE & READ STATUS ] =========================\\
-global.read_status = process.env.AUTO_READ_STATUS || "false"
-global.save_status = process.env.AUTO_SAVE_STATUS || "false"
+global.read_status = process.env.AUTO_READ_STATUS || "true"
+global.save_status = process.env.AUTO_SAVE_STATUS || "true"
 global.save_status_from =  process.env.SAVE_STATUS_FROM  || "null,923xxxxxxxx";
 global.read_status_from =  process.env.READ_STATUS_FROM  ||  "923184474176,923xxxxxxxx";
 
@@ -62,7 +62,7 @@ global.api_smd = "https://api-smd-1.vercel.app"
 global.scan = "https://suhail-md-vtsf.onrender.com/";
 
 
-global.SESSION_ID = process.env.SESSION_ID ||  "" ;
+global.SESSION_ID = process.env.SESSION_ID ||  "Suhail;;;eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiYUpoVlIvVmNCK1Z6VWhSQXVjbGhkV0VVUzB3TXBLREpnYnBza01IUGZIMD0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiRFl2VW9KUkJBalFlNVZnUTZyZTZQbGVSSlgyamcwbWhaV0ZoMXhMMDlIND0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJpQno3Y25Gd2xsandiQk9zRGt5SlYwdVM1VVlFL2FyZ04vblVoL3VHQUVjPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJjcllvZkkzVmxjbjB4bnNHN1hwRTRlOXlFYjdZZ1cyb1gzZmo5YW9Yc21FPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkFDYjhFYlFMY1VVUW9VNEZscHljelZVV0MrZWsvMTRTVDNzUTlQZFdqRVE9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IlVsWlpYSzIxc1RnSEgzUklhcllVby9VUHZBVnV0V2Q3QmRHaWo4LzIrRXc9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiMEVyRUpaVytXTkprY2pYd0xTbG9IZ0JxY2FDUU03WW1hcTdmQWxicm5WST0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiOXhqMWdtRklFUWxEaEFQeHJJbTMrRmZrS0dGNk5pM3RTTjFEYkEzYytTdz0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Ik5TMWF2ZHhnVCs3SEFHN0wyQU1ueVZ1MzIrclNHaEZzZ2tTajVIZ2RJZUNCZWNYK0JxdDVDMnhwVUxQRWhZNkdQUkticFFxNmtPaXNGTzVGQXVlRkRnPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MjQ5LCJhZHZTZWNyZXRLZXkiOiJrbkRJczMxempnNGlOMGhkYnVqdDk3V2NmRGk4ME92N0NpNFcvL1p1Ui9VPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6MzEsImZpcnN0VW51cGxvYWRlZFByZUtleUlkIjozMSwiYWNjb3VudFN5bmNDb3VudGVyIjowLCJhY2NvdW50U2V0dGluZ3MiOnsidW5hcmNoaXZlQ2hhdHMiOmZhbHNlfSwiZGV2aWNlSWQiOiJPYkRZZ2RmMlRYT1pJRkhKV2ZvUlpBIiwicGhvbmVJZCI6ImExYTA5Y2M4LTVhMDgtNDM2OC04YzljLWNmY2JiYWFmZjA4ZiIsImlkZW50aXR5SWQiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJqR2dUcTNOZndzWnQ1R3JRcVI4eHlFSkRKVHc9In0sInJlZ2lzdGVyZWQiOnRydWUsImJhY2t1cFRva2VuIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiVHpJNGNhVS82dHNVYUVHQTRPSkh3c3dDSllZPSJ9LCJyZWdpc3RyYXRpb24iOnt9LCJwYWlyaW5nQ29kZSI6Ik42RVJETTJYIiwibWUiOnsiaWQiOiIyNTQ3Mjk2MTQ1MzY6MjFAcy53aGF0c2FwcC5uZXQiLCJsaWQiOiIzMzYzNDIyNDQ4ODU1MzoyMUBsaWQifSwiYWNjb3VudCI6eyJkZXRhaWxzIjoiQ0p6eTY0NEJFSkRGamJFR0dBRWdBQ2dBIiwiYWNjb3VudFNpZ25hdHVyZUtleSI6IkYxMVYyNzdFV1ZxSTdFSUZXVDk5eHkzbkovTkNUOEt0RGtiZUpkVGF4UW89IiwiYWNjb3VudFNpZ25hdHVyZSI6IkNENlhwdXJ5NmhkSXpTbHdxajg3UmdlRXlFM1kvNzlMTnZLQ2M5dmp6ZE9VWkhhUVdCdU1qSlZraTBNREZFRUpSRkZqazdZMW12ZENqdFpLU3NXckNBPT0iLCJkZXZpY2VTaWduYXR1cmUiOiJBUnJnSytQWi82eEllYVlxVVlDRlJiZVFxRGRaRUpGaUdjL0FlQ3c5R2hMS1pUSDZvTlZ0RkdFMXRqTWEwMURrUmY4Z1lvZ3B3cEVzMUhUM1RyeW1CQT09In0sInNpZ25hbElkZW50aXRpZXMiOlt7ImlkZW50aWZpZXIiOnsibmFtZSI6IjI1NDcyOTYxNDUzNjoyMUBzLndoYXRzYXBwLm5ldCIsImRldmljZUlkIjowfSwiaWRlbnRpZmllcktleSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkJSZGRWZHUreEZsYWlPeENCVmsvZmNjdDV5ZnpRay9DclE1RzNpWFUyc1VLIn19XSwicGxhdGZvcm0iOiJhbmRyb2lkIiwibGFzdEFjY291bnRTeW5jVGltZXN0YW1wIjoxNzEzNTk1MDQ4fQ==" ;
 
 
 module.exports = {
@@ -76,8 +76,8 @@ module.exports = {
  
   author : process.env.PACK_AUTHER|| "Suhail-MD",
   packname: process.env.PACK_NAME || "♥️",
-  botname : process.env.BOT_NAME  || "sᴜʜᴀɪʟ-ᴍᴅ",
-  ownername:process.env.OWNER_NAME|| "It'x Suhail",
+  botname : process.env.BOT_NAME  || "Thüg lïfë",
+  ownername:process.env.OWNER_NAME|| "Thug life",
 
 
   errorChat : process.env.ERROR_CHAT || "",
